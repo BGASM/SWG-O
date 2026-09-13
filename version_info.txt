@@ -1,0 +1,39 @@
+# PyInstaller version resource for SWG-O.
+# Embeds product name, author and version into the exe so Windows file
+# properties, Task Manager and the SmartScreen dialog show real information
+# instead of a blank publisher. Feed it in with --version-file=version_info.txt
+#
+# Bump the numbers in BOTH filevers/prodvers and the string fields together.
+
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 0, 0, 0),
+    prodvers=(1, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo(
+      [
+        StringTable(
+          u'040904B0',
+          [
+            StringStruct(u'CompanyName', u'Beargasm'),
+            StringStruct(u'FileDescription', u'SWG-O - live client preview tiles for Star Wars Galaxies'),
+            StringStruct(u'FileVersion', u'1.0.0.0'),
+            StringStruct(u'InternalName', u'SWG-O'),
+            StringStruct(u'LegalCopyright', u'Copyright (c) Beargasm'),
+            StringStruct(u'OriginalFilename', u'SWG-O.exe'),
+            StringStruct(u'ProductName', u'SWG-O'),
+            StringStruct(u'ProductVersion', u'1.0.0.0'),
+          ]
+        )
+      ]
+    ),
+    VarFileInfo([VarStruct(u'Translation', [1033, 1200])])
+  ]
+)

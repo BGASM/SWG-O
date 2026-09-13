@@ -1,0 +1,28 @@
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Inno Setup
+Output/
+*.exe
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Local settings, in case anyone runs from the repo folder
+swgo.json
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Windows
+Thumbs.db
+desktop.ini
